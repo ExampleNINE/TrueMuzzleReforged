@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fortification Industrial - Citadel</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FTC_TwinMG_Gun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.95,0.13)</li>
+								<li>(0.95,-0.13)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FTC_Autocannon_Gun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(3,2)</drawSize>
+							<offsets>
+								<li>(1.61,0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FTC_AntiTank_Gun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(5,4)</drawSize>
+							<offsets>
+								<li>(2.3,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FTC_Batterey_Gun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(8,6.9)</drawSize>
+							<offsets>
+								<li>(2.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

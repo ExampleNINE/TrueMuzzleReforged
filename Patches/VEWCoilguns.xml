@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!--VFEP WARCASKET RAILGUN(Broken weapon angle, retesting/calibration needed, apologies in advance.)-->
+<!--	<Operation Class="PatchOperationFindMod" MayRequire="Vanilla Factions Expanded - Pirates">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_Railgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(8,2)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+						
+		    </operations>
+		</match>
+	</Operation> -->
+	
+	
+	<!--COILGUN WEAPONS-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Coilguns</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VWE_Gun_GaussRifle"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(4,1)</drawSize>
+							<offsets>
+								<li>(0.6,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VWE_Gun_GaussMagnum"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(3,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.1)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VWE_Gun_GaussLance"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(5,1)</drawSize>
+							<offsets>
+								<li>(0.8,-0.1)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

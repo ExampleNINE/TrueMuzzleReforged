@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!--VE HEAVY WEAPONS-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Heavy Weapons</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Combat Extended</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="VWE_Gun_Autocannon"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalshThree</def>
+								<drawSize>(2,2)</drawSize>
+								<offsets>
+									<li>(0.8,-0.28)</li>
+								</offsets>
+							</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="VWE_Gun_SwarmMissileLauncher"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(3,2)</drawSize>
+								<offsets>
+									<li>(0.6,-0.25)</li>
+									<li>(0.6,-0.35)</li>
+								</offsets>
+								<isAlternately>true</isAlternately>
+							</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="VWE_Gun_UraniumSlugRifle"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(2,2)</drawSize>
+								<offsets>
+									<li>(0.75,-0.26)</li>
+								</offsets>
+							</li>
+						</value>
+					</li>
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="VWE_Gun_Autocannon"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalshThree</def>
+								<drawSize>(2,2)</drawSize>
+								<offsets>
+									<li>(0.8,-0.02)</li>
+								</offsets>
+							</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="VWE_Gun_SwarmMissileLauncher"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(3,2)</drawSize>
+								<offsets>
+									<li>(0.5,-0.1)</li>
+									<li>(0.5,-0.2)</li>
+								</offsets>
+								<isAlternately>true</isAlternately>
+							</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="VWE_Gun_UraniumSlugRifle"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(2,2)</drawSize>
+								<offsets>
+									<li>(0.5,-0.02)</li>
+								</offsets>
+							</li>
+						</value>
+					</li>
+				</operations>
+			</nomatch>
+		</match>
+	</Operation>
+</Patch>

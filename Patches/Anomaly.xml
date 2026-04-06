@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Testing only-->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Gun_HellcatRifle"]</xpath>
+        <value>
+            <li Class="MuzzleFlash.MuzzleFlashProps">
+                <def>MF_StandardMuzzleFalsh</def>
+                <drawSize>(1,1)</drawSize>
+                <offsets>
+                    <li>(0.50,0.05)</li>
+                </offsets>
+            </li>
+        </value>
+    </Operation>
+</Patch>

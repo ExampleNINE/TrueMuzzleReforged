@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!--VFEP TURRETS-->			
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_Artillery_FieldGun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(10,8)</drawSize>
+							<offsets>
+								<li>(1.6,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_Artillery_Cannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(8,7)</drawSize>
+							<offsets>
+								<li>(1.6,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_GauntletChargeCanon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(6,6)</drawSize>
+							<offsets>
+								<li>(1.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<!--VFEP WEAPONS-->				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_Autorifle"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(4,4)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_UraniumSlugRifle"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(4,4)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_Slugthrower"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(4,4)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_Minigun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(4,4)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_ChargeLance"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(5,3)</drawSize>
+							<offsets>
+								<li>(0.9,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_HandheldCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(10,8)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_ChargeBlaster"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(4,3)</drawSize>
+							<offsets>
+								<li>(0.9,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

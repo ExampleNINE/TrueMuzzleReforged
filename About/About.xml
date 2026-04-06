@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>NINecilA.TrueMuzzle.Reforged</packageId>
+    
+    <name>TrueMuzzle: Reforged</name>
+    
+    <author>NINecilA &amp; Gemini</author>
+    
+    <supportedVersions>
+        <li>1.5</li>
+        <li>1.6</li>
+    </supportedVersions>
+    
+    <description>
+[h1]TrueMuzzle: Reforged (真实枪口：重铸)[/h1]
+
+我们站在前人的肩膀上，仅仅是希望为边缘世界的枪林弹雨带来一丝更纯粹的真实感。
+本作是对 BetterProjectileOrigin 与 Muzzle Flash 核心概念的彻底解构与底层重铸。我们将绝对精准的弹道修正与极具张力的枪口火焰融为一体，化繁为简。
+
+[h2]✨ 谦逊而强大的核心 (Features)[/h2]
+- [b]化境扫描 (Pixel-Perfect Origin)[/b]：无需庞杂的坐标配置文件。智能引擎会在极速扫描武器贴图后，精准计算出每一把枪的绝对枪口中心。告别胸口射击与半空飞弹。
+- [b]火弹合一 (Seamless Flash Fusion)[/b]：内嵌高性能 GPU 渲染管线。火焰与子弹在代码底层共享唯一的绝对 3D 坐标，并完美突破图层遮挡，确保火光永远严丝合缝地绽放。
+- [b]万物归宗 (Smart Heuristics)[/b]：搭载全自动智能分类引擎。无论你订阅了多么冷门的武器包，它都能根据武器词缀全自动分配最契合的火焰特效；同时利用科技等级（TechLevel）与黑名单机制，优雅地绕过弓箭、标枪与无火药光束武器。
+- [b]海纳百川 (Native Compatibility)[/b]：抛弃了旧版繁冗的 C# 补丁工具，全面拥抱环世界官方原生 XML 规范，并完美向下读取/兼容原版 Muzzle Flash 社区积累的庞大武器数据。
+- [b]坚如磐石 (Zero Memory Leak)[/b]：底层彻底抛弃了低效的字典锁定，采用现代 C# 的 ConditionalWeakTable 技术。哪怕是万人规模的同屏交火，依然能保证内存的绝对纯净与如丝般的流畅。
+
+[h2]⚠️ 致谢与兼容性警告[/h2]
+诚挚感谢原 Muzzle Flash 与 BetterProjectileOrigin 作者们的伟大开拓。
+由于本作底层已完全接管并重写了相关渲染逻辑，请务必[b]取消订阅或禁用[/b]原版 BetterProjectileOrigin 与 Muzzle Flash，以防游戏引擎发生冲突。
+
+---
+[i]“愿这微小的火光，照亮你在边缘世界的每一个漫漫长夜。”[/i]
+[i]Crafted with passion and elegance by NINecilA &amp; Gemini.[/i]
+    </description>
+    
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>brrainz.harmony</li>
+    </loadAfter>
+</ModMetaData>

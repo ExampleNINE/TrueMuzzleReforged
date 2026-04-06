@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--Types of Muzzle Flashes:-->
+<!--(MF_StandardMuzzleFalsh)-"One direct/narrow" type flash, akin to a jet's exhaust.-->
+<!--(MF_StandardMuzzleFalshTwo)-A more "wide" version of the previous one, an freebrams tank's cannon muzzle flash for example.-->
+<!--(MF_StandardMuzzleFalshThree)-A muzzle flash in "three directions", up, down, and front. M16 muzzle flash for reference.-->
+<!--(MF_ChargedMuzzleFalsh)-An energy lightning type muzzle flash for "charged/spacer" weapons. Self explanatory no need for an example.-->
+
+<!--[PERSONAL TIP]: Patch a few weapons, save and test, then tweak. Rinse and Repeat.-->
+
+
+<!--TMC WEAPON PACK-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>TMC Weapon Pack</li> <!--The target mod to patch, open the mod's "about" xml file then copy from there.-->
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			
+<!--SNIPER RIFLES SET I--> <!--Use tags as you go, trust me.-->
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_AWM388tmc"]</xpath> <!--Def of a Weapon or Turret Gun.-->
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def> <!--Muzzle Flash Used; See types of muzzle flashes.-->
+							<drawSize>(2,2)</drawSize> <!--Affects the "size" of the muzzle flash texture.-->
+							<offsets>
+								<li>(0.5,0.02)</li> <!--Use this to fine tune where you need to "put" the muzzle flash, Left side = X plane/horizontal plane(Left/Right) | Right side = Y plane/vertical plane(UP/DOWN) [TIP]Tweak using decimals.-->
+							<!--<li>(0.5,-0.02)</li>--> <!--You can duplicate the amount of "Flash Barrels" like for example an MLRS(Multi Launch Rocket System), a Bouble barrel boomstick or a Minigun.-->
+							</offsets>
+						<!--<isAlternately>true</isAlternately>--> <!--This line of code acts as a way to shoot in sequence, assuming there is more flash barrels as stated above!(Can be added to all but is used via "true" /ON or "false" /OFF.)-->
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_MRAD"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(3,2)</drawSize>
+							<offsets>
+								<li>(0.8,0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_HacateII"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(3,3)</drawSize>
+							<offsets>
+								<li>(0.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> <!--RANDOM COMMENT: Guns with suppressors produce a small amount of flash afaik, the SR25 has one but audio used is without suppressor sooo... meh..-->
+					<xpath>Defs/ThingDef[defName="TMC_SR_SR25tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.3,0.2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_M700Precison"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_M700tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_SRS"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.52,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_MK17tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.53,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--SNIPER RIFLES SET II-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_MKOneEightThermal"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_MFourteenThermal"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_RFB"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SR_SKSOldNVG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--SHOTGUNS-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_M870tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_KS23tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.4,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> <!--RANDOM COMMENT: An over-under shotgun?, i swear i had trouble finding this gun on the internet.-->
+					<xpath>Defs/ThingDef[defName="TMC_SG_OnUShotgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.02)</li>  <!--An example for muzzle flash duplication but instead of a horizontal plane, it is up and down.-->
+								<li>(0.5,-0.02)</li>
+							</offsets>
+							<isAlternately>true</isAlternately> <!--Shoots alternatively/sequence instead of two at the same time.-->
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_Model1887tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_Sawnoff"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,2)</drawSize>
+							<offsets>
+								<li>(0.3,0)</li>
+								<li>(0.3,0)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_Spas"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_MP155ULTIMA"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SG_M2Shotgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--SUBMACHINEGUNS-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_MP5SD"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.2,0.2)</drawSize>
+							<offsets>
+								<li>(0.5,0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_VectorCRB"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.2,0.2)</drawSize>
+							<offsets>
+								<li>(0.5,-0.01)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_MPX"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.39,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_MP7tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.3,-0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_P90tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,-0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_PP19tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_UMP45tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.38,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_SMG_Vector9mm"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0.051)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+<!--MACHINEGUNS-->
+                <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_LMG_M240tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_LMG_M249tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_LMG_MG5tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> <!--RANDOM COMMENT: Gun is slightly angled upwards, i aint tweaking that!-->
+					<xpath>Defs/ThingDef[defName="TMC_LMG_Pulemyot"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.59,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> <!--RANDOM COMMENT: Same with this!-->
+					<xpath>Defs/ThingDef[defName="TMC_LMG_Rebel"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--HANDGUNS-->
+                <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_M9A3a"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.2,0.2)</drawSize>
+							<offsets>
+								<li>(0.5,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_M17a"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.2,0.2)</drawSize>
+							<offsets>
+								<li>(0.45,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_M29a"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.2,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_Makarov"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.2,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> <!--RANDOM COMMENT: Dunno if that barrel attachment is suppressor or not, im just gonna reduce the flash anyway.-->
+					<xpath>Defs/ThingDef[defName="TMC_HG_MakarovDrummer"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.2,0.2)</drawSize>
+							<offsets>
+								<li>(0.5,0.056)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_MP443a"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.2,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_1911Aeroknox"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.3,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_HG_P99tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.2,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--ASSAULT RIFLES RUSSIAN AK SERIES-->
+                <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_AK74N"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_AK74M"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_AK74MKalash"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_AKMClassic"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> <!--RANDOM COMMENT: An AK from ikea. . . That is one cursed gun.-->
+					<xpath>Defs/ThingDef[defName="TMC_AR_AKIDEA"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.3,0.3)</drawSize>
+							<offsets>
+								<li>(0.5,0.015)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_BullKalash"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--ASSAULT RIFLES NATO SERIES-->
+                	<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_ACR"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				    <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_G36tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.3,0.3)</drawSize>
+							<offsets>
+								<li>(0.48,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_HK416tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.055)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_M16Combat"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_AUG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.38,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_Continental"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.53,0.01)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_DesertRifleV2tmc"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.48,0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--ASSAULT RIFLES RIGHT ARM OF THE FREE WORLD SERIES-->
+                <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_AR_FNFAL"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--TMC TURRETS--> <!--RANDOM COMMENT: I cant find the howitzer. So i just patched the MG-->
+                <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="TMC_Gun_Krd"]</xpath> <!--IMPORTANT NOTE: Use the Gun def of the turret, not the base turret itself or else it wont work.-->
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def> <!--Like guns, turrets can also accept any of the four types of muzzle flashes. Just dont duplicate.-->
+							<drawSize>(2.5,2.5)</drawSize>
+							<offsets>
+								<li>(1.16,0)</li> <!--Same as guns, can be multiple, you decide!-->
+							</offsets>
+						<!--<isAlternately>true</isAlternately>--> <!--Can also be used for turrets featuring multiple guns or multiple barrels. Same use, "true" /ON or "false" /OFF.)-->
+						</li>
+					</value>
+				</li>
+					
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--VFE SETTLERS-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+<!--VFES WEAPONS-->			
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFES_Gun_DoubleBarreledShotgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFES_Gun_DoubleActionRevolver"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1.5,1)</drawSize>
+							<offsets>
+								<li>(0.38,-0.12)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFES_Gun_HuntingRifle"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.5,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+<!--VFES TURRETS-->
+
+            <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_GatlingGun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(3,2)</drawSize>
+							<offsets>
+								<li>(1.25,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

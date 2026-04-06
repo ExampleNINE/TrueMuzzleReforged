@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Testing only-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Feral Faction Pack</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_Scraptooth"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.6,0.6)</drawSize>
+							<offsets>
+								<li>(0.06,-0.05)</li>
+								<li>(0.22,0.31)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_ScatterStick"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1.5)</drawSize>
+							<offsets>
+								<li>(0.4,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Gun_Thrasher"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1,1)</drawSize>
+								<offsets>
+									<li>(0.38,0.07)</li>
+								</offsets>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Gun_Thrasher"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1,1)</drawSize>
+								<offsets>
+									<li>(0.36,0.09)</li>
+								</offsets>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_Crucifier"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1.8,1.4)</drawSize>
+							<offsets>
+								<li>(0.41,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_Deathdealer"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.6,0.6)</drawSize>
+							<offsets>
+								<li>(0.08,-0.11)</li>
+								<li>(0.24,0.28)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_Gnasher"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.4,0.6)</drawSize>
+							<offsets>
+								<li>(-0.01,-0.11)</li>
+								<li>(0.22,0.35)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_SkullBuster"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.48,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--Mutant shootas-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Feral_ScatterCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.48,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Feral_RivetCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1.2,0.8)</drawSize>
+							<offsets>
+								<li>(0.5,0.02)</li>
+								<li>(0.5,0.08)</li>
+								<li>(0.5,-0.04)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Feral_DMG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1.3,1)</drawSize>
+							<offsets>
+								<li>(0.43,0.12)</li>
+								<li>(0.43,-0.12)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

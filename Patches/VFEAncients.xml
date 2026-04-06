@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!--VFEA TURRETS-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Ancients</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEA_Gun_AncientPointDefenseTurret"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(3,3)</drawSize>
+							<offsets>
+								<li>(0.7,0.7)</li>
+								<li>(0.7,-0.7)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFEA_Gun_AncientSecurityTurret"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

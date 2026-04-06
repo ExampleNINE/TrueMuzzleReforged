@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vanilla Factions Expanded - Deserters -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Deserters</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VFED_Gun_ChargeCycler"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_ChargedMuzzleFalsh</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.23,0.01)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

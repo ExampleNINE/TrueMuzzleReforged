@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fortifications - Industrial</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FT_Gun_TurretAA"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(1.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FT_Gun_TurretAT"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(2.5,2.5)</drawSize>
+							<offsets>
+								<li>(1.9,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FT_Gun_Autocannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2.5,2)</drawSize>
+							<offsets>
+								<li>(0.9,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FT_Gun_Recoilless"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(3.5,3)</drawSize>
+							<offsets>
+								<li>(1.2,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			
+			    <li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(9,9)</drawSize>
+							<offsets>
+								<li>(1.2,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(9,9)</drawSize>
+							<offsets>
+								<li>(2.1,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			
+		    </operations>
+		</match>
+	</Operation>
+</Patch>

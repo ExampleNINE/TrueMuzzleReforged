@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!--VFEM-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Mechanoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!--BUILDABLE MECHANOID GUN-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_CombatMechanoidGun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_RaiderMechanoidGun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+
+				<!--VFEM CHARGE TYPE WEAPONS-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_ChargeBlasterLight"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AdvancedChargeBlasterLight"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AdvancedChargeBlasterHeavy"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AdvancedChargeLance"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(2,1)</drawSize>
+							<offsets>
+								<li>(0.5,-0.01)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--VFEM INFERNO/PLASMA TYPE WEAPONS-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AdvancedInfernoCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--VFEM THUMP CANNON-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AdvancedThumpCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(4,3)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--VFEM PLAYER TURRETS-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AutoChargeBlaster"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AutoChargeLance"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1.5,2)</drawSize>
+							<offsets>
+								<li>(0.4,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_AutoInfernoCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(3,4)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--VFEM SHIP TURRETS-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_ChargeBlasterCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_ChargeLanceCannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1.5,2)</drawSize>
+							<offsets>
+								<li>(0.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+
+				<!--VFEM SHIP TURRETS: BIG GUNS-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_InfernoArtillery"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(6,3.5)</drawSize>
+							<offsets>
+								<li>(0.5,0.5)</li>
+								<li>(1.1,0)</li>
+								<li>(0.5,-0.5)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="VFE_Gun_ChargeRailgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(10,4)</drawSize>
+							<offsets>
+								<li>(2.88,1.63)</li>
+								<li>(2.9,-1.63)</li>
+							</offsets>
+							<isAlternately>false</isAlternately>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

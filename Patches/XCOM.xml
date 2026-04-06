@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Testing only-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla XCOM Weapons</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="XCOM_Gun_CVRifle"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVSniperRifle"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1.5,1.5)</drawSize>
+								<offsets>
+									<li>(0.55,0.02)</li>
+								</offsets>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVSniperRifle"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1.5,1.5)</drawSize>
+								<offsets>
+									<li>(0.58,0.0)</li>
+								</offsets>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="XCOM_Gun_CVShotgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1.5)</drawSize>
+							<offsets>
+								<li>(0.4,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVCannon"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1,1)</drawSize>
+								<offsets>
+									<li>(0.4,-0.06)</li>
+								</offsets>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVCannon"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1,1)</drawSize>
+								<offsets>
+									<li>(0.55,-0.06)</li>
+								</offsets>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVPistol"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1,1)</drawSize>
+								<offsets>
+									<li>(0.3,0.08)</li>
+								</offsets>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVPistol"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1,1)</drawSize>
+								<offsets>
+									<li>(0.29,0.085)</li>
+								</offsets>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="XCOM_Gun_CVGrenadeLauncher"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1.5,1.5)</drawSize>
+							<offsets>
+								<li>(0.38,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="XCOM_Gun_TemplarPistol"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.27,0.11)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVVektorRifle"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1.5,1)</drawSize>
+								<offsets>
+									<li>(0.4,-0.025)</li>
+								</offsets>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVVektorRifle"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(1.5,1)</drawSize>
+								<offsets>
+									<li>(0.53,-0.025)</li>
+								</offsets>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="XCOM_Gun_CVBullpup"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.07)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVHeavyAutocannon"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(2,1.5)</drawSize>
+								<offsets>
+									<li>(0.38,0.09)</li>
+								</offsets>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="XCOM_Gun_CVHeavyAutocannon"]</xpath>
+						<value>
+							<li Class="MuzzleFlash.MuzzleFlashProps">
+								<def>MF_StandardMuzzleFalsh</def>
+								<drawSize>(2,1.5)</drawSize>
+								<offsets>
+									<li>(0.63,0.13)</li>
+								</offsets>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="XCOM_Gun_BoltCaster"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1.8,1.5)</drawSize>
+							<offsets>
+								<li>(0.18,0.01)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

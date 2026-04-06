@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>MF_StandardMuzzleFalsh</defName>
+        <texture>MuzzleFlash/MuzzleFlashOne5x5</texture>
+        <defaultSize>(0.8,0.8)</defaultSize>
+        <splits>(5,5)</splits>
+        <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+        <duration>5</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.4</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>MF_StandardMuzzleFalshTwo</defName>
+        <texture>MuzzleFlash/MuzzleFlashTwo4x5</texture>
+        <defaultSize>(0.8,0.8)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+        <duration>5</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.3</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>MF_StandardMuzzleFalshThree</defName>
+        <texture>MuzzleFlash/MuzzleFlashThree4x5</texture>
+        <defaultSize>(0.8,0.8)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.32,0)</drawOffsetMultiplier>
+        <duration>5</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.3</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>MF_ChargedMuzzleFalsh</defName>
+        <texture>MuzzleFlash/MuzzleFlashCharged4x5</texture>
+        <defaultSize>(1.2,1.2)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.4,0)</drawOffsetMultiplier>
+        <duration>5</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.1</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+</Defs>

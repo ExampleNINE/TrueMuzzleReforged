@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vanilla Weapons Expanded - Makeshift -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Makeshift</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftPistol"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.18,0.1)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftSMG"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.3,-0.06)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftRifle"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(1,1)</drawSize>
+				<offsets>
+					<li>(0.66,0.02)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftShotgun"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1,1.5)</drawSize>
+				<offsets>
+					<li>(0.55,0.05)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_MakeshiftLMG"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1,1)</drawSize>
+				<offsets>
+					<li>(0.73,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

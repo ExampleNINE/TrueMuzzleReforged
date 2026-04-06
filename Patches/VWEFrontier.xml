@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vanilla Weapons Expanded - Frontier -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Frontier</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_HeavyRevolver"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(1,1)</drawSize>
+				<offsets>
+					<li>(0.23,0.1)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_VolcanicPistol"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(1,1)</drawSize>
+				<offsets>
+					<li>(0.23,0.1)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_FrontierPistol"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.18,0.1)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_RollingBlockRifle"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1)</drawSize>
+				<offsets>
+					<li>(0.68,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_RepeatingShotgun"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1,1.5)</drawSize>
+				<offsets>
+					<li>(0.55,0.05)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Frontier</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Weapons Expanded - Coilguns</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_GaussRevolver"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(3,1)</drawSize>
+				<offsets>
+					<li>(0.5,0.1)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_GaussRepeater"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(4,1)</drawSize>
+				<offsets>
+					<li>(0.6,0.08)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Frontier</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Weapons Expanded - Quickdraw</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_Derringer"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(1,1)</drawSize>
+				<offsets>
+					<li>(0.23,0.1)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_LeverActionShotgun"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1,1.5)</drawSize>
+				<offsets>
+					<li>(0.55,0.05)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded - Frontier</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Weapons Expanded - Heavy Weapons</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+	<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+		<xpath>Defs/ThingDef[defName="VWEFT_Gun_HandheldGatlingGun"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(4,3)</drawSize>
+				<offsets>
+					<li>(0.9,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</li>
+
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>
