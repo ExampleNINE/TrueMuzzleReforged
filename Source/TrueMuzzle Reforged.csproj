@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C5B7553-D76C-488F-8223-3CC9898C9CFC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrueMuzzle</RootNamespace>
+    <AssemblyName>TrueMuzzle</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\TM_Libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\TM_Libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\TM_Libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="core\MuzzleScanner.cs" />
+    <Compile Include="core\TrueMuzzleExtension.cs" />
+    <Compile Include="core\TrueMuzzlePatches.cs" />
+    <Compile Include="core\TrueMuzzleSettings.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\AnimatedRenderManager.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\AnimatedRenderQueue.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\AssetsManager.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\BaseInstancedRenderManager.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Common\ExceptionRendering.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Common\NativeBuffer.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Common\ShaderPropertyID.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Common\StructuredBuffer.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\InstancedRenderer.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\InstancedRenderManager.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\InstancedRenderQueue.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Jobs\JobCalcMatricesUnsafe.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Utility\UtilsMaterial.cs" />
+    <Compile Include="MuzzleFlashCore\AnimatedEffect\Utility\UtilsUnsafe.cs" />
+    <Compile Include="MuzzleFlashCore\MapComponent_MuzzleFlashManager.cs" />
+    <Compile Include="MuzzleFlashCore\MuzzleFlashDef.cs" />
+    <Compile Include="MuzzleFlashCore\MuzzleFlashEntity.cs" />
+    <Compile Include="MuzzleFlashCore\MuzzleFlashProps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="shaders-linux" />
+    <EmbeddedResource Include="shaders-macos" />
+    <EmbeddedResource Include="shaders-windows" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

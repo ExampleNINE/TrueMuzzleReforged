@@ -1,0 +1,10 @@
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\bin\Release\TrueMuzzle.dll
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\bin\Release\TrueMuzzle.pdb
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\bin\Release\0Harmony.dll
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\bin\Release\Assembly-CSharp.dll
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\bin\Release\UnityEngine.CoreModule.dll
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\obj\Release\TrueMuzzle Reforged.csproj.AssemblyReference.cache
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\obj\Release\TrueMuzzle Reforged.csproj.CoreCompileInputs.cache
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\obj\Release\TrueMuzz.AECEC359.Up2Date
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\obj\Release\TrueMuzzle.dll
+C:\Users\lx\Desktop\TrueMuzzle\TrueMuzzle\obj\Release\TrueMuzzle.pdb
